@@ -98,7 +98,7 @@
     
         <div class="emmietopheader">
            
-    SSENNAH - GENERAL HARDWARE - JJOGGO
+    MOMO CHICKEN POINT. 
 </div>
 
     </nav>
