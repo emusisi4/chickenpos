@@ -28,7 +28,7 @@
 <body class="login-page">
     <div class="login-box">
         <div class="logo">
-            <a href="javascript:void(0);"><b>HARDWARE POS</b></a>
+            <a href="javascript:void(0);"><b>CHICKEN POS</b></a>
             
         </div>
         <div class="card">
