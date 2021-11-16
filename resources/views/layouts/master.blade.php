@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>SenaHardware</title>
+    <title>MomoChicken</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -68,19 +68,28 @@
 <body>
 
     <!-- Page Loader -->
+    
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
-                <div class="spinner-layer pl-red">
+                <div class="spinner-layer pl-orange">
+                <!-- <img src="images/logo.png" class="profile-user-img img-fluid img-circle" style="height: 200px; width: 200px;">  -->
                     <div class="circle-clipper left">
-                        <div class="circle"></div>
+                        <div class="circle">
+                            
+                        </div>
                     </div>
                     <div class="circle-clipper right">
                         <div class="circle"></div>
+                        
                     </div>
                 </div>
             </div>
-            <p>Please wait...</p>
+            <p><h3>Loadig Data please wait...</h3>
+            <img src="images/logo.png" class="profile-user-img img-fluid img-circle" style="height: 200px; width: 200px;"> 
+        </p>
+           
+            
         </div>
     </div>
     <!-- #END# Page Loader -->
@@ -97,8 +106,12 @@
     <nav class="navbar">
     
         <div class="emmietopheader">
-           
-    MOMO CHICKEN POINT. 
+        <?php $u1 = Auth::user()->id;
+/// geting the users role
+$uidb = DB::table('users')->where('id', $u1)->value('branch'); 
+$branchnamehh = DB::table('branches')->where('id', $uidb)->value('branchname');?>     
+             
+    MOMO CHICKEN POINT - <?php echo $branchnamehh; ?> Branch
 </div>
 
     </nav>

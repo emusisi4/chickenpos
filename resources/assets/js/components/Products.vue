@@ -326,7 +326,7 @@ pre {
                     <div class="card">
                         <div class="header">
                             <h2>
-                                 PRODUCT SETTINGS                            </h2>
+                                 PRODUCT                            </h2>
                             
                         </div>
                         <div class="body">
