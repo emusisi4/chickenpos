@@ -2267,7 +2267,7 @@ pre {
                                     <div class="form-group">
                                         <div class="form-line">
                                           <has-error :form="form" field="quantity"></has-error>
-                                               <input type="number" :value="form.quantity" id="quantity" @keyup="updatequantity" @keypress="updatequantity" name="quantity" class="form-control" :class="{ 'is-invalid': form.errors.has('quantity') }">
+                                               <input type="text" :value="form.quantity" id="quantity" @keyup="updatequantity" @keypress="updatequantity" name="quantity" class="form-control" :class="{ 'is-invalid': form.errors.has('quantity') }">
                                             
                                         </div>
                                     </div>
@@ -2745,7 +2745,7 @@ pre {
                                     <div class="form-group">
                                         <div class="form-line">
                                           <has-error :form="form" field="quantity"></has-error>
-                                               <input type="number" :value="form.quantity" id="quantity" @keyup="updatequantity" @keypress="updatequantity" name="quantity" class="form-control" :class="{ 'is-invalid': form.errors.has('quantity') }">
+                                               <input type="text" :value="form.quantity" id="quantity" @keyup="updatequantity" @keypress="updatequantity" name="quantity" class="form-control" :class="{ 'is-invalid': form.errors.has('quantity') }">
                                             
                                         </div>
                                     </div>
@@ -3828,6 +3828,23 @@ pre {
 </template>
 
 <script>
+
+// Get all stylesheets HTML
+let stylesHtml = '';
+for (const node of [...document.querySelectorAll('link[rel="stylesheet"], style')]) {
+  stylesHtml += node.outerHTML;
+  
+}
+onload =function(){ 
+  var ele = document.querySelectorAll('.number-only')[0];
+  ele.onkeypress = function(e) {
+     if(isNaN(this.value+""+String.fromCharCode(e.charCode)))
+        return false;
+  }
+  ele.onpaste = function(e){
+     e.preventDefault();
+  }
+}
 $('body').on('keydown', 'input, select', function(e) {
     if (e.key === "Enter") {
         var self = $(this), form = self.parents('form:eq(0)'), focusable, next;
