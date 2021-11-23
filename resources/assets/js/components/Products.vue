@@ -1302,7 +1302,7 @@ pre {
                                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                  <input v-model="form.qty" type="number" name="rol"
+                                                  <input v-model="form.qty" type="text" name="rol"
                       class="form-control" :class="{ 'is-invalid': form.errors.has('rol') }">
                     <has-error :form="form" field="rol"></has-error>
                                             </div>
