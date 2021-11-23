@@ -976,7 +976,7 @@ Contact : 0702941704 / 0392941704
                                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                  <input v-model="form.quantity" type="number" @keypress="updatecurrentsalestatus" @keyup="updatecurrentsalestatus" name="quantity"
+                                                  <input v-model="form.quantity" type="text" @keypress="updatecurrentsalestatus" @keyup="updatecurrentsalestatus" name="quantity"
                       class="form-control" :class="{ 'is-invalid': form.errors.has('quantity') }">
                     <has-error :form="form" field="quantity"></has-error>
                                             </div>
