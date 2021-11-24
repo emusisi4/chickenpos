@@ -403,7 +403,7 @@ text-align: center;
                     </div>
                 </div>
                
-<div v-if="inputvatcomponentaccess > 0 "  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<!-- <div v-if="inputvatcomponentaccess > 0 "  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-indigo">
                         <div class="icon">
                             <i class="material-icons"></i>
@@ -414,8 +414,10 @@ text-align: center;
                               <b>{{currencydetails}}  {{formatPrice(inputvatamount) }}</b></div>
                         </div>
                     </div>
-                </div>
-       <div v-if="outputcomponentaccess > 0 " class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                </div> -->
+     
+     
+       <!-- <div v-if="outputcomponentaccess > 0 " class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-indigo">
                         <div class="icon">
                             <i class="material-icons"></i>
@@ -426,9 +428,9 @@ text-align: center;
                             >   <b>{{currencydetails}}  {{formatPrice(outputvatamount) }}</b></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div v-if="netvatvatcomponentcomponentaccess > 0" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <!-- <div v-if="netvatvatcomponentcomponentaccess > 0" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-indigo">
                         <div class="icon">
                             <i class="material-icons"></i>
@@ -439,7 +441,7 @@ text-align: center;
                              data-fresh-interval="20"><b>{{currencydetails}}</b></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 <!-- v-if="netvatvatcomponentcomponentaccess > 0" -->
                    <div  class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-indigo">
