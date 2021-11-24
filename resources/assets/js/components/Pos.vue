@@ -370,7 +370,7 @@ text-align: center;
                             <i class="material-icons"></i>
                         </div>
                         <div class="content">
-                            <div class="text"><b>JOGO SHOP BALANCE </b></div>
+                            <div class="text"><b>Kinnawattaka SHOP BALANCE </b></div>
                             <div class="number count-to">
                               <b>{{currencydetails}}  {{formatPrice(shopcashbalance)}}</b></div>
                         </div>
